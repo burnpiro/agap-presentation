@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="author" content="Kemal Erdem">
 
-  <title>WRM Temporal Network</title>
+  <title>AGAP Presentation</title>
 
   <link rel="stylesheet" href="dist/reset.css">
   <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="dist/theme/black.css" id="theme">
 
   <!-- Theme used for syntax highlighting of code -->
@@ -17,27 +18,283 @@
 <body>
 <div class="reveal">
   <div class="slides">
-    <section>
-      <h2>Presentation</h2>
-      <small>Authors...</small>
+    <section class="grid-layout" style="
+    grid-template-columns: 60% 40%;" data-background-image="assets/slide_1.svg">
+      <div style="
+  grid-column: 1;
+  grid-row: 1;
+  text-align: start;
+">
+        <h2>Airport Gate Assignment Problem:</h2>
+        <h3>Deep Reinforcement Learning Methods</h3>
+      </div>
+    </section>
+    <section class="grid-layout" style="
+    grid-template-columns: 80% 20%;" data-background-image="assets/slide_2.svg">
+      <div style="
+  grid-column: 1;
+  grid-row: 1;
+  text-align: start;
+">
+        <h4>Business Problem</h4>
+        <small>Can we improve people’s mobility around the airport?</small>
+        <small>Can we operate in a non-deterministic environment</small>
+        <small>Are we able to decrease the plane’s waiting time for an available gate?</small>
+      </div>
+      <div style="
+  grid-column: 1;
+  grid-row: 2;
+  text-align: start;
+">
+        <h4>Business Risk</h4>
+        <small>Inaccurate data/simulation</small><br/>
+        <small>Lack of expertise</small>
+      </div>
+      <div style="
+  grid-column: 1;
+  grid-row: 3;
+  text-align: start;
+  min-height: 100px;
+">
+      </div>
+
+    </section>
+    <section data-background-image="assets/slide_3.svg">
+      <div style="
+  text-align: start;
+">
+        <h3>Airport Gate Assignment Problem</h3>
+        <p>
+          <h4 class="accent-color">What is AGAP?</h4>
+          <ul>
+            <li>Problem of assigning airplanes to gates</li>
+            <li>Has to minimize multiple objectives like waiting for free gate, forced movement of people etc.</li>
+          </ul>
+        </p>
+        <div style="min-height: 150px;"></div>
+      </div>
+    </section>
+    <section data-background-image="assets/slide_4.svg">
+      <div style="
+  text-align: start;
+">
+        <h3>Why do we want to solve AGAP?</h3>
+        <p>
+        <ul>
+          <li>Airports want to fit more flights</li>
+          <li>Preventing delays</li>
+          <li>Reducing waiting time</li>
+        </ul>
+        </p>
+        <div style="min-height: 250px;"></div>
+      </div>
+    </section>
+    <section data-background-image="assets/slide_5.svg">
+      <div style="
+  text-align: start;
+">
+        <h3>Current approaches to AGAP</h3>
+        <p>
+        <ul>
+          <li>Evolutionary Multi-Objective Optimization</li>
+          <li>Multi-agent Markov decision processes</li>
+          <li>Tabu search</li>
+        </ul>
+        </p>
+        <div style="min-height: 100px;"></div>
+      </div>
+    </section>
+    <section data-background-image="assets/slide_6.svg">
+      <div style="
+  text-align: start;
+">
+        <h3>Limits of current approaches</h3>
+        <p>
+        <ul>
+          <li>Static deterministic environments - mathematical definitions</li>
+          <li>Many oversimplifications</li>
+        </ul>
+        </p>
+        <div style="min-height: 100px;"></div>
+      </div>
+    </section>
+    <section data-background-image="assets/slide_7.svg">
+
+      <div style="
+  text-align: start;
+">
+        <h3>Proposed solution architecture</h3>
+        <ul style="font-size: 0.8em">
+          <li>Actor model based environment</li>
+          <li>Use of state of the art RL algorithms</li>
+        </ul>
+      </div>
+      <img src="assets/process.svg" style="height: 40vh; margin: 0">
+      <img src="assets/plane.svg" style="position: absolute; right: -5vw; bottom: 0; height: 200px" />
     </section>
     <section>
-      <h2>Slide 1</h2>
-      <p>
-        ABC
-        $$
-        a_b
-        $$
-      </p>
-      <pre><code data-trim data-noescape>
-(def lazy-fib
-  (concat
-   [0 1]
-   ((fn rfib [a b]
-        (lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
-  </code></pre>
+      <div style="
+  text-align: start;
+  height: calc(700px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+">
+        <h3>Evaluation</h3>
+        <ul style="font-size: 0.8em">
+          <li>Actor model based environment</li>
+          <li>Use of state of the art RL algorithms</li>
+        </ul>
+        <img src="assets/plane.svg" class="animate-fly-out"/>
+      </div>
+    </section>
+    <section class="grid-layout" style="
+    grid-template-columns: 50% 50%;">
+      <div style="
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  text-align: start;
+  padding-top: 50px;
+">
+        <h3>Team/Partners</h3>
+      </div>
+      <div style="
+  grid-column: 1;
+  grid-row: 2;
+  text-align: start;
+">
+        <h5 class="accent-color">Team</h5>
+        <ul style="font-size: 0.6em">
+          <li>Reinforcement Learning</li>
+          <li>Fast Time Simulation (e.g. AirTOp)</li>
+          <li>Deep Learning</li>
+          <li>Real-time data processing</li>
+        </ul>
+      </div>
+      <div style="
+  grid-column: 2;
+  grid-row: 2;
+  text-align: start;
+">
+        <h5 class="accent-color">Partners</h5>
+        <ul style="font-size: 0.6em">
+          <li>Airport employees and managers as domain experts</li>
+          <li>Airline representatives for airport mobility cost management</li>
+        </ul>
+      </div>
+      <div style="grid-row: 3; grid-column: 1 / span 2; position: relative; transform: translateY(80px) scale(1.2);">
+        <img src="assets/sits.svg" style="width: 100%">
+        <img src="assets/halina.jpeg" class="avatar sit-place" style="right: 14%; top: 30%">
+        <img src="assets/kemal.jpg" class="avatar sit-place" style="right: 35%; top: 30%">
+        <img src="assets/marek.jpg" class="avatar sit-place" style="right: 57%; top: 30%">
+        <img src="assets/filip.png" class="avatar sit-place" style="right: 78%; top: 30%">
+      </div>
+    </section>
+
+    <section data-background-image="assets/simulator.jpg">
+      <div style="position: absolute; width: 40%; left: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+        <h2>Simulator</h2>
+        <p>Some staff about simulator</p>
+      </div>
     </section>
     <section>
+      <div style="
+  text-align: start;
+  height: calc(700px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+">
+        <h3>Deployment</h3>
+        <ul style="font-size: 0.8em">
+          <li>Generation of analysis reports focused on optimization of passenger traffic </li>
+          <li>Integration with current airport flight management systems - human decision-making support tools</li>
+        </ul>
+        <img src="assets/cloud.svg" class="animate-clouds" style="top: 5px; animation-delay: -7.4s;" />
+        <img src="assets/cloud.svg" class="animate-clouds" style="top: 15px; animation-delay: -6.2s;" />
+        <img src="assets/cloud.svg" class="animate-clouds" style="top: 2px; animation-delay: -4.5s;" />
+        <img src="assets/cloud.svg" class="animate-clouds" style="top: 3px; animation-delay: -4.1s;" />
+        <img src="assets/cloud.svg" class="animate-clouds" style="top: 12px; animation-delay: -4.0s;" />
+        <img src="assets/cloud.svg" class="animate-clouds" style="top: 0px; animation-delay: -3.6s;" />
+        <img src="assets/cloud.svg" class="animate-clouds" style="top: 14px; animation-delay: -3.2s;" />
+        <img src="assets/cloud.svg" class="animate-clouds" style="top: 6px; animation-delay: -2.3s;" />
+        <img src="assets/cloud.svg" class="animate-clouds" style="top: 22px; animation-delay: -2.1s;" />
+        <img src="assets/cloud.svg" class="animate-clouds" style="top: 5px; animation-delay: -2.1s;" />
+        <img src="assets/cloud.svg" class="animate-clouds" style="top: 2px; animation-delay: -0.7s;" />
+        <img src="assets/cloud.svg" class="animate-clouds" style="top: 17px; animation-delay: -0.2s;" />
+        <img src="assets/plane.svg" class="animate-flying" />
+        <img src="assets/cloud.svg" class="animate-clouds" style="top: 0; animation-delay: -7.8s;" />
+        <img src="assets/cloud.svg" class="animate-clouds" style="top: 10px; animation-delay: -6.5s;" />
+        <img src="assets/cloud.svg" class="animate-clouds" style="top: 2px; animation-delay: -5.5s;" />
+        <img src="assets/cloud.svg" class="animate-clouds" style="top: 3px; animation-delay: -5.1s;" />
+        <img src="assets/cloud.svg" class="animate-clouds" style="top: 18px; animation-delay: -3.0s;" />
+        <img src="assets/cloud.svg" class="animate-clouds" style="top: 15px; animation-delay: -1.4s;" />
+        <img src="assets/cloud.svg" class="animate-clouds" style="top: 0px; animation-delay: -1.2s;" />
+        <img src="assets/cloud.svg" class="animate-clouds" style="top: 6px; animation-delay: -0.8s;" />
+        <img src="assets/cloud.svg" class="animate-clouds" style="top: 30px; animation-delay: -0.1s;" />
+      </div>
+    </section>
+
+    <section class="grid-layout" style="
+    grid-template-columns: 50% 50%;">
+      <div style="
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  text-align: start;
+  padding-top: 50px;
+">
+        <h3>Costs & Benefits</h3>
+      </div>
+      <div style="
+  grid-column: 1;
+  grid-row: 2;
+  text-align: start;
+">
+        <h5 class="accent-color">Costs</h5>
+        <ul style="font-size: 0.6em">
+          <li>Gathering data for simulation purposes</li>
+          <li>Simulation engine</li>
+          <li>Time and resources spent on interviews with domain experts</li>
+          <li>Model training costs</li>
+        </ul>
+      </div>
+      <div style="
+  grid-column: 2;
+  grid-row: 2;
+  text-align: start;
+">
+        <h5 class="accent-color">Benefits</h5>
+        <ul style="font-size: 0.6em">
+          <li>Better optimization and planning of flights and airport spatial layout</li>
+          <li>Improved passenger experience with necessary airport mobility and time spent on it</li>
+          <li>Improved domain expert knowledge</li>
+        </ul>
+      </div>
+      <div style="
+  grid-column: 1 / span 2;
+  grid-row: 3;
+  text-align: start;
+  height: 300px;
+position:relative;">
+        <img src="assets/plane.svg" class="animate-landing" style="animation-delay: -8s;" />
+        <img src="assets/plane.svg" class="animate-landing" style="animation-delay: -6s;" />
+        <img src="assets/plane.svg" class="animate-landing" style="animation-delay: -3s;" />
+        <img src="assets/plane.svg" class="animate-landing" />
+        <img src="assets/airport.svg" style="width: calc(100% + 400px); margin-left: 150px;">
+        <img src="assets/run.svg" style="width: calc(100% + 400px); margin-left: calc(-100% + 200px); position:absolute; bottom: -8px">
+      </div>
+    </section>
+    <section >
+      <div style="
+  text-align: center;
+">
+        <h3>Agile methodology</h3>
+        <img src="assets/flow.png">
+      </div>
+    </section>
+    <section data-background-image="assets/slide_8.svg">
       <h2>Thanks</h2>
       <blockquote>"There's no such thing as a stupid question!"</blockquote>
       <p>
@@ -49,7 +306,6 @@
 </div>
 
 
-
 <script src="dist/reveal.js"></script>
 <script src="plugin/notes/notes.js"></script>
 <script src="plugin/markdown/markdown.js"></script>
@@ -57,13 +313,12 @@
 <script src="plugin/math/math.js"></script>
 <script>
   // More info about config & dependencies:
-  // - https://github.com/hakimel/reveal.js#configuration
-  // - https://github.com/hakimel/reveal.js#dependencies
+  // - https://revealjs.com/config/
   Reveal.initialize({
     hash: true,
     controls: true,
     progress: true,
-    slideNumber: false,
+    slideNumber: true,
     overview: true,
     center: true,
     navigationMode: 'default',
@@ -77,15 +332,15 @@
     previewLinks: false,
     transition: 'slide', // none/fade/slide/convex/concave/zoom
     transitionSpeed: 'default', // default/fast/slow
-    backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+    backgroundTransition: 'slide', // none/fade/slide/convex/concave/zoom
     display: 'block',
     math: {
       mathjax: 'plugin/math/MathJax.js',
       config: 'TeX-AMS_HTML-full', // See http://docs.mathjax.org/en/latest/config-files.html
       // pass other options into `MathJax.Hub.Config()`
-      TeX: { Macros: { RR: "{\\bf R}" } }
+      TeX: {Macros: {RR: "{\\bf R}"}}
     },
-    plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
+    plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath]
   });
 </script>
 </body>
