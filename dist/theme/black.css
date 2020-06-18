@@ -30,14 +30,18 @@ section.has-light-background, section.has-light-background h1, section.has-light
   --heading3-size: 1.3em;
   --heading4-size: 1em;
   --code-font: monospace;
-  --link-color: #42affa;
-  --link-color-hover: #8dcffc;
-  --selection-background-color: #bee4fd;
+  --link-color: #FFB600;
+  --link-color-hover: #FFBF21;
+  --selection-background-color: #FFBF21;
   --selection-color: #fff; }
 
 .reveal-viewport {
-  background: #191919;
-  background-color: #191919; }
+  background: #00aced;
+  background-color: #00aced; }
+
+.accent-color {
+  color: #FFB600 !important;
+}
 
 .reveal {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -237,18 +241,18 @@ section.has-light-background, section.has-light-background h1, section.has-light
  * LINKS
  *********************************************/
 .reveal a {
-  color: #42affa;
+  color: #FFB600;
   text-decoration: none;
   transition: color .15s ease; }
 
 .reveal a:hover {
-  color: #8dcffc;
+  color: #FFBF21;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #068de9; }
+  background: #CC9100; }
 
 /*********************************************
  * Frame helper
@@ -261,21 +265,21 @@ section.has-light-background, section.has-light-background h1, section.has-light
   transition: all .15s linear; }
 
 .reveal a:hover .r-frame {
-  border-color: #42affa;
+  border-color: #FFB600;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls {
-  color: #42affa; }
+  color: #FFB600; }
 
 /*********************************************
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
-  color: #42affa; }
+  color: #FFB600; }
 
 /*********************************************
  * PRINT BACKGROUND
