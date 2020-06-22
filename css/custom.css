@@ -118,3 +118,43 @@
         transform: translate(1200px ,20px) scale(0.6) rotate(30deg);
     }
 }
+
+.bar-chart {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 28px;
+}
+
+.bar-true {
+    background-color: #0ead69;
+    border-bottom: 3px solid #2d6a4f;
+    border-top: 3px solid #2d6a4f;
+    border-left: 3px solid #2d6a4f;
+    border-right: 1px solid #2d6a4f;
+    padding: 5px 20px;
+    width: calc(53.5% - 40px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar-false {
+    background-color: #f94144;
+    border-bottom: 3px solid #9d0208;
+    border-top: 3px solid #9d0208;
+    border-right: 3px solid #9d0208;
+    border-left: 1px solid #9d0208;
+    padding: 5px 20px;
+    width: calc(46.5% - 40px);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.caption {
+    font-size: 14px;
+    color: #ffb600;
+    font-weight: bold;
+}
