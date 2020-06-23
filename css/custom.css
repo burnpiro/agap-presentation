@@ -28,11 +28,12 @@
     animation-duration: 4s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
 
 @keyframes fly-up {
     0%   {
-        transform: translateY(0vh) scale(1);
+        transform: translate(-100px, 0vh) scale(1);
     }
     25%  {
         transform: translate(100px ,-300px) scale(0.5) rotate(25deg);
@@ -41,7 +42,7 @@
         transform: translate(300px ,-500px) scale(0.5) rotate(30deg);
     }
     100% {
-        transform: translate(920px ,-500px) scale(0.5) rotate(30deg);
+        transform: translate(1200px ,-500px) scale(0.5) rotate(30deg);
     }
 }
 

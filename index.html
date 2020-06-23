@@ -70,15 +70,15 @@
           <li style="    display: flex;
     flex-direction: row;
     justify-content: start;
-    align-items: center;"><span>In 2018 </span> <b style="font-size: 58px; padding: 0 10px"> 535mln </b> <span> flights departed with some delay</span></li>
+    align-items: center;"><span>In 2018 </span> <b style="font-size: 58px; padding: 0 10px; color: #CC2300"> 535mln </b> <span> flights departed with some delay</span></li>
           <li style="    display: flex;
     flex-direction: row;
     justify-content: start;
-    align-items: center;"><b style="font-size: 58px; padding-right: 10px"> 150mln </b> <span>with more than 30min delay</span></li>
+    align-items: center;"><b style="font-size: 58px; padding-right: 10px; color: #CC2300"> 150mln </b> <span>with more than 30min delay</span></li>
           <li style="    display: flex;
     flex-direction: row;
     justify-content: start;
-    align-items: center;"><b style="font-size: 58px; padding-right: 10px"> 87mln </b> <span>due to airport organization issues</span></li>
+    align-items: center;"><b style="font-size: 58px; padding-right: 10px; color: #CC2300"> 87mln </b> <span>due to airport organization issues</span></li>
         </ul><br/>
         <span class="caption">Sources: EuroStat - "Air transport statistics 2018"; EuroControl - "Annual report for 2018/2019"</span>
       </div>
@@ -102,7 +102,7 @@
       <div style="
   text-align: start;
 ">
-        <h3>Why do we want to solve AGAP?</h3>
+        <h3>How solving AGAP can benefit us?</h3>
         <p>
         <ul>
           <li>Airports want to fit more flights</li>
@@ -167,8 +167,8 @@
 ">
         <h3>Evaluation</h3>
         <ul style="font-size: 0.8em">
-          <li>Actor model based environment</li>
-          <li>Use of state of the art RL algorithms</li>
+          <li style="padding-bottom: 16px">Reward function composed of: <br/>waiting time, forced people movement, etc.</li>
+          <li>Bellman Optimality equation</li>
         </ul>
         <img src="assets/plane.svg" class="animate-fly-out"/>
       </div>
@@ -216,10 +216,14 @@
       </div>
     </section>
 
-    <section data-background-image="assets/simulator.jpg">
-      <div style="position: absolute; width: 40%; left: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+    <section data-background-color="white" data-background-image="assets/layout-open.png" data-background-position="top">
+      <div style="position: absolute; width: 40%; left: 30%; top: -120px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
         <h2>Simulator</h2>
-        <p>Some staff about simulator</p>
+        <ul>
+          <li>Model airport behaviour</li>
+          <li>Environment for RL algorithm</li>
+          <li>Visualize decisions</li>
+        </ul>
       </div>
     </section>
     <section>
@@ -233,8 +237,10 @@
 ">
         <h3>Deployment</h3>
         <ul style="font-size: 0.8em">
-          <li>Generation of analysis reports focused on optimization of passenger traffic </li>
-          <li>Integration with current airport flight management systems - human decision-making support tools</li>
+          <li>Generation of analysis reports focused on optimization of passenger traffic</li>
+          <li>Human decision-making support tools as web application</li>
+          <li>Simulation API - for different layout/parameters analysis</li>
+          <li>Possible integration with already existing Airport Management System</li>
         </ul>
         <img src="assets/cloud.svg" class="animate-clouds" style="top: 5px; animation-delay: -7.4s;" />
         <img src="assets/cloud.svg" class="animate-clouds" style="top: 15px; animation-delay: -6.2s;" />
@@ -322,8 +328,8 @@ position:relative;">
       <h2>Thanks</h2>
       <blockquote>"There's no such thing as a stupid question!"</blockquote>
       <p>
-        <small>Authors</small><br/>
-        <small><a href="">Links</a></small><br/>
+        <small>Authors:</small><br/>
+        <small>Marek Pokropiński, Filip Strzałka, Kemal Erdem</small>
       </p>
     </section>
   </div>
