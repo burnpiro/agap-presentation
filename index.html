@@ -30,18 +30,21 @@
       </div>
     </section>
     <section class="grid-layout" style="
-    grid-template-columns: 80% 20%;" data-background-image="assets/slide_2.svg">
+    grid-template-columns: 85% 15%;" data-background-image="assets/slide_2.svg">
       <div style="
-  grid-column: 1;
-  grid-row: 1;
-  text-align: start;
-">
-        <h4>Business Problem</h4>
-        <small>Can we improve people’s mobility around the airport?</small>
-        <small>Can we operate in a non-deterministic environment</small>
-        <small>Are we able to decrease the plane’s waiting time for an available gate?</small>
-      </div>
-      <div style="
+      text-align: start;
+    ">
+            <h3>Airport Gate Assignment Problem</h3>
+            <p>
+            <h4 class="accent-color">What is AGAP?</h4>
+            <ul>
+              <li>Problem of assigning airplanes to gates</li>
+              <li>Has to minimize multiple objectives like waiting for free gate, forced movement of people etc.</li>
+            </ul>
+            </p>
+            <div style="min-height: 150px;"></div>
+          </div>
+      <!-- <div style="
   grid-column: 1;
   grid-row: 2;
   text-align: start;
@@ -49,7 +52,7 @@
         <h4>Business Risk</h4>
         <small>Inaccurate data/simulation</small><br/>
         <small>Lack of expertise</small>
-      </div>
+      </div> -->
       <div style="
   grid-column: 1;
   grid-row: 3;
@@ -59,9 +62,43 @@
       </div>
 
     </section>
+
+    <section data-background-image="assets/slide_5.svg">
+      <div style="
+  text-align: start;
+">
+        <h3>Current approaches to AGAP</h3>
+        <p>
+        <ul>
+          <li>Integer linear programming - Schiphol</li>
+          <li>Stochastic model - Taiwan International, Ataturk</li>
+          <li>Heuristic approach - Toronto International</li>
+          <li>Genetic algorithm - KSA airport</li>
+        </ul>
+        </p>
+        <div style="min-height: 100px;"></div>
+      </div>
+    </section>
+
+    
+    <section data-background-image="assets/slide_3.svg">
+      <div style="
+  text-align: start;
+">
+        <h3>Limits of current approaches</h3>
+        <p>
+        <ul>
+          <li>Static deterministic environments - mathematical definitions</li>
+          <li>Many oversimplifications</li>
+        </ul>
+        </p>
+        <div style="min-height: 100px;"></div>
+      </div>
+    </section>
+
     <section>
       <div>
-        <h3 style="display: flex; align-items: center; justify-content: center">Is this really a problem? <img src="assets/folder.svg" style="height: 120px; margin-left: 20px; filter: invert()"></h3>
+        <h3 style="display: flex; align-items: center; justify-content: center">Motivation<img src="assets/folder.svg" style="height: 120px; margin-left: 20px; filter: invert()"></h3>
         <div class="bar-chart">
           <div class="bar-true">53.5% Punctual</div>
           <div class="bar-false">46.5% Delayed</div>
@@ -83,21 +120,7 @@
         <span class="caption">Sources: EuroStat - "Air transport statistics 2018"; EuroControl - "Annual report for 2018/2019"</span>
       </div>
     </section>
-    <section data-background-image="assets/slide_3.svg">
-      <div style="
-  text-align: start;
-">
-        <h3>Airport Gate Assignment Problem</h3>
-        <p>
-        <h4 class="accent-color">What is AGAP?</h4>
-        <ul>
-          <li>Problem of assigning airplanes to gates</li>
-          <li>Has to minimize multiple objectives like waiting for free gate, forced movement of people etc.</li>
-        </ul>
-        </p>
-        <div style="min-height: 150px;"></div>
-      </div>
-    </section>
+
     <section data-background-image="assets/slide_4.svg">
       <div style="
   text-align: start;
@@ -113,34 +136,51 @@
         <div style="min-height: 250px;"></div>
       </div>
     </section>
-    <section data-background-image="assets/slide_5.svg">
+
+    
+    
+
+<section class="grid-layout" style="
+    grid-template-columns: 50% 50%;" data-background-image="assets/slide_6.svg">
+    <div style="
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    text-align: start;
+    padding-top: 50px;
+  ">
+  <h3>Ideate</h3>
+  </div>
       <div style="
+      grid-column: 1;
+  grid-row: 2;
   text-align: start;
 ">
-        <h3>Current approaches to AGAP</h3>
+        <!-- <h3>Ideate</h3> -->
         <p>
         <ul>
-          <li>Evolutionary Multi-Objective Optimization</li>
-          <li>Multi-agent Markov decision processes</li>
-          <li>Tabu search</li>
+          <li>Genetic Algorithm</li>
+          <li>Swarm Optimization</li>
+          <li>Tabu Search</li>
+          <li><b>Reinforcement Learning</b></li>
         </ul>
+
         </p>
         <div style="min-height: 100px;"></div>
       </div>
-    </section>
-    <section data-background-image="assets/slide_6.svg">
       <div style="
+  grid-column: 2;
+  grid-row: 2;
   text-align: start;
 ">
-        <h3>Limits of current approaches</h3>
-        <p>
-        <ul>
-          <li>Static deterministic environments - mathematical definitions</li>
-          <li>Many oversimplifications</li>
-        </ul>
-        </p>
-        <div style="min-height: 100px;"></div>
-      </div>
+<p>
+  <ul>
+    <li>Linear Programming</li>
+    <li>Gradient Search</li>
+    <li>Exhaustive Search</li>
+  </ul>
+  </div>
+  <div style="min-height: 100px;"></div>
+    
     </section>
     <section data-background-image="assets/slide_7.svg">
 
@@ -167,8 +207,9 @@
 ">
         <h3>Evaluation</h3>
         <ul style="font-size: 0.8em">
-          <li style="padding-bottom: 16px">Reward function composed of: <br/>waiting time, forced people movement, etc.</li>
+          <li style="padding-bottom: 16px">Reward function composed of: <br/>waiting time, forced people movement, <br/>costs of changing gates, etc.</li>
           <li>Bellman Optimality equation</li>
+          <li>Performance comparison to greedy algorithm</li>
         </ul>
         <img src="assets/plane.svg" class="animate-fly-out"/>
       </div>
@@ -193,7 +234,6 @@
           <li>Reinforcement Learning</li>
           <li>Fast Time Simulation (e.g. AirTOp)</li>
           <li>Deep Learning</li>
-          <li>Real-time data processing</li>
         </ul>
       </div>
       <div style="
@@ -203,8 +243,8 @@
 ">
         <h5 class="accent-color">Partners</h5>
         <ul style="font-size: 0.6em">
-          <li>Airport employees and managers as domain experts</li>
-          <li>Airline representatives for airport mobility cost management</li>
+          <li>Airport employees and managers as domain experts for prior knowledge definition</li>
+          <!-- <li>Airport representatives for airport cost management</li> -->
         </ul>
       </div>
       <div style="grid-row: 3; grid-column: 1 / span 2; position: relative; transform: translateY(80px) scale(1.2);">
@@ -240,7 +280,7 @@
           <li>Generation of analysis reports focused on optimization of passenger traffic</li>
           <li>Human decision-making support tools as web application</li>
           <li>Simulation API - for different layout/parameters analysis</li>
-          <li>Possible integration with already existing Airport Management System</li>
+          <li>Scientific publications</li>
         </ul>
         <img src="assets/cloud.svg" class="animate-clouds" style="top: 5px; animation-delay: -7.4s;" />
         <img src="assets/cloud.svg" class="animate-clouds" style="top: 15px; animation-delay: -6.2s;" />
@@ -268,7 +308,7 @@
     </section>
 
     <section class="grid-layout" style="
-    grid-template-columns: 50% 50%;">
+    grid-template-columns: 40% 60%;">
       <div style="
   grid-column: 1 / span 2;
   grid-row: 1;
@@ -297,26 +337,26 @@
 ">
         <h5 class="accent-color">Benefits</h5>
         <ul style="font-size: 0.6em">
+          <li>Improved knowledge in domain of reinforcement learning for multiobjective optimization</li>
+          <li>Practical (research-based) insight into the difficulty of solving similar tasks with reinforcement learning techniques</li>
           <li>Better optimization and planning of flights and airport spatial layout</li>
-          <li>Improved passenger experience with necessary airport mobility and time spent on it</li>
-          <li>Improved domain expert knowledge</li>
         </ul>
       </div>
       <div style="
   grid-column: 1 / span 2;
   grid-row: 3;
   text-align: start;
-  height: 300px;
+  height: 250px;
 position:relative;">
         <img src="assets/plane.svg" class="animate-landing" style="animation-delay: -8s;" />
         <img src="assets/plane.svg" class="animate-landing" style="animation-delay: -6s;" />
         <img src="assets/plane.svg" class="animate-landing" style="animation-delay: -3s;" />
         <img src="assets/plane.svg" class="animate-landing" />
-        <img src="assets/airport.svg" style="width: calc(100% + 400px); margin-left: 150px;">
-        <img src="assets/run.svg" style="width: calc(100% + 400px); margin-left: calc(-100% + 200px); position:absolute; bottom: -8px">
+        <img src="assets/airport.svg" style="width: calc(100% + 400px); margin-left: -20px; max-width: none;">
+        <img src="assets/run.svg" style="width: calc(100% + 400px); margin-left: calc(-100% + 160px); position:absolute; bottom: -28px; max-width: none;">
       </div>
     </section>
-    <section >
+    <section>
       <div style="
   text-align: center;
 ">
